@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FUNDED BY DESIGN — Resources</title>
+<meta name="description" content="Practical resources for architects and designers.">
+<style>
+:root{--bg:#f5f5f3;--card:#fff;--ink:#181818;--muted:#777;--line:#d9d9d5;--soft:#ececea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Arial,sans-serif}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+nav{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;position:sticky;top:0;z-index:5}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.12em;font-size:14px}.navlinks{display:flex;gap:24px;font-size:13px}
+.hero{padding:95px 0 70px;text-align:center}.eyebrow{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 12px;font-size:10px;font-weight:800;letter-spacing:.14em}
+h1{font-size:clamp(45px,8vw,88px);line-height:.94;letter-spacing:-.06em;margin:22px auto 18px;max-width:900px}.lead{max-width:650px;margin:auto;color:var(--muted);font-size:17px}
+.actions{display:flex;justify-content:center;gap:10px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 18px;border-radius:8px;font-size:12px;font-weight:900;border:1px solid var(--line)}.dark{background:var(--ink);color:#fff;border-color:var(--ink)}.light{background:#fff}
+section{padding:35px 0 70px}.sectionhead{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}.sectionhead h2{margin:0;font-size:30px;letter-spacing:-.04em}.sectionhead p{margin:0;color:var(--muted);font-size:13px}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.filter{border:1px solid var(--line);background:#fff;border-radius:99px;padding:8px 13px;font-size:11px;cursor:pointer}.filter.active{background:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.cover{height:145px;background:var(--soft);padding:16px;display:flex;justify-content:space-between;align-items:flex-end}.num{font-size:45px;font-weight:900;color:#c9c9c5;letter-spacing:-.06em}.tag{font-size:9px;font-weight:900;border:1px solid var(--line);border-radius:99px;padding:6px 8px;background:#fff}.body{padding:20px;display:flex;flex-direction:column;flex:1}.body h3{margin:0 0 7px;font-size:18px}.body p{margin:0;color:var(--muted);font-size:13px}.meta{display:flex;justify-content:space-between;margin:18px 0 14px;font-size:12px}.price{font-weight:900}.body .btn{width:100%;margin-top:auto}.empty{display:none;text-align:center;color:var(--muted);padding:40px}
+.band{background:var(--ink);color:#fff;border-radius:18px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}.band h2{margin:0 0 6px;font-size:28px}.band p{margin:0;color:#c9c9c5;max-width:650px;font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.step small{font-weight:900;color:var(--muted);letter-spacing:.1em}.step h3{margin:8px 0 4px}.step p{margin:0;color:var(--muted);font-size:13px}
+.faq{border-top:1px solid var(--line)}details{background:#fff;border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:800}.answer{color:var(--muted);font-size:13px;padding-top:10px;max-width:750px}
+footer{border-top:1px solid var(--line);padding:28px 0 45px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.navlinks{display:none}.band{display:block}}
+@media(max-width:560px){.wrap{width:calc(100% - 24px)}.hero{padding:65px 0 50px}.hero h1{font-size:48px}.grid{grid-template-columns:1fr}.sectionhead{display:block}.sectionhead p{margin-top:6px}footer{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="brand">FUNDED BY DESIGN</div><div class="navlinks"><a href="#free">Free</a><a href="#premium">Premium</a><a href="#how">How It Works</a><a href="#faq">FAQ</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="eyebrow">TOOLS • TEMPLATES • RESOURCES</span>
+<h1>DESIGN BETTER.<br>WORK SMARTER.</h1>
+<p class="lead">Practical resources for architects, designers and the people building things. Templates, checklists, guides and tools that save time.</p>
+<div class="actions"><a class="btn dark" href="#free">EXPLORE FREE</a><a class="btn light" href="#premium">VIEW PREMIUM</a></div>
+</div></header>
+
+<section id="free"><div class="wrap">
+<div class="sectionhead"><div><h2>Free Resources</h2><p>Useful enough to save. Free enough to share.</p></div></div>
+<div class="filters" data-group="free"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="architecture">ARCHITECTURE</button><button class="filter" data-filter="interiors">INTERIORS</button><button class="filter" data-filter="site">SITE</button><button class="filter" data-filter="business">BUSINESS</button></div>
+<div class="grid" id="free-grid"></div><div class="empty" id="free-empty">No resources in this category yet.</div>
+</div></section>
+
+<section id="premium"><div class="wrap">
+<div class="sectionhead"><div><h2>Premium Resources</h2><p>Detailed tools for working professionals.</p></div></div>
+<div class="filters" data-group="premium"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="architecture">ARCHITECTURE</button><button class="filter" data-filter="interiors">INTERIORS</button><button class="filter" data-filter="site">SITE</button><button class="filter" data-filter="business">BUSINESS</button></div>
+<div class="grid" id="premium-grid"></div><div class="empty" id="premium-empty">No resources in this category yet.</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<div class="band"><div><h2>Built for the design community.</h2><p>Follow Funded by Design for new resources, practical design ideas and free drops.</p></div><a class="btn light" href="https://instagram.com/" target="_blank">FOLLOW ON INSTAGRAM →</a></div>
+<div class="steps"><div class="step"><small>01 / DISCOVER</small><h3>Find a resource</h3><p>Browse free and premium tools by category.</p></div><div class="step"><small>02 / DOWNLOAD</small><h3>Get the file</h3><p>Free resources download directly; premium resources go through checkout.</p></div><div class="step"><small>03 / BUILD</small><h3>Use it</h3><p>Adapt the resource to your own project workflow.</p></div></div>
+</div></section>
+
+<section id="faq"><div class="wrap"><div class="sectionhead"><div><h2>FAQ</h2><p>Simple answers for your audience.</p></div></div><div class="faq">
+<details><summary>How do I receive a paid resource?</summary><div class="answer">Click the product button, complete checkout, and use the delivery link provided by your payment/digital-product service.</div></details>
+<details><summary>Where are free resources hosted?</summary><div class="answer">Free files can be hosted on Google Drive, Dropbox or your own storage and linked from the resource card.</div></details>
+<details><summary>Can I request a resource?</summary><div class="answer">Replace this answer with your Instagram DM, email or request-form process.</div></details>
+</div></div></section>
+
+<footer class="wrap"><span>© 2026 FUNDED BY DESIGN</span><span>Architecture • Design • Business • Resources</span></footer>
+
+<script>
+/* RESOURCE DATABASE — edit ONLY this section to keep adding products */
+const resources=[
+{type:"free",category:"site",number:"01",format:"FREE PDF",title:"Architect's Site Visit Checklist",description:"Measurements, photographs, services, materials and coordination checks for your next site visit.",price:"FREE",file:"PDF",link:"YOUR_FREE_FILE_LINK"},
+{type:"free",category:"architecture",number:"02",format:"FREE PDF",title:"Material Selection Checklist",description:"A practical framework for comparing performance, maintenance, application and cost.",price:"FREE",file:"PDF",link:"YOUR_FREE_FILE_LINK"},
+{type:"free",category:"business",number:"03",format:"FREE XLSX",title:"Interior Costing Starter Sheet",description:"A simple starting structure for breaking an interior project into work categories and cost heads.",price:"FREE",file:"XLSX",link:"YOUR_FREE_FILE_LINK"},
+{type:"premium",category:"interiors",number:"01",format:"PREMIUM",title:"Complete Interior BOQ Template",description:"Editable BOQ structure with work categories, specifications, quantities and costing fields.",price:"₹499",file:"XLSX",link:"YOUR_CHECKOUT_LINK"},
+{type:"premium",category:"business",number:"02",format:"PREMIUM",title:"Architect's Project Starter Pack",description:"Client brief, project checklist, drawing issue register, site checklist and coordination templates.",price:"₹799",file:"ZIP",link:"YOUR_CHECKOUT_LINK"},
+{type:"premium",category:"architecture",number:"03",format:"PREMIUM",title:"Residential Design Toolkit",description:"Room-by-room checklists, design review sheets, planning prompts and client discussion frameworks.",price:"₹999",file:"ZIP",link:"YOUR_CHECKOUT_LINK"}];
+
+function card(r){return `<article class="card resource-card" data-category="${r.category}"><div class="cover"><span class="num">${r.number}</span><span class="tag">${r.format}</span></div><div class="body"><h3>${r.title}</h3><p>${r.description}</p><div class="meta"><span class="price">${r.price}</span><span>${r.file}</span></div><a class="btn dark" href="${r.link}" target="_blank" rel="noopener">${r.type==="free"?"DOWNLOAD FREE →":"BUY & DOWNLOAD →"}</a></div></article>`}
+
+function render(type,filter="all"){let items=resources.filter(r=>r.type===type&&(filter==="all"||r.category===filter));document.getElementById(type+"-grid").innerHTML=items.map(card).join("");document.getElementById(type+"-empty").style.display=items.length?"none":"block"}
+["free","premium"].forEach(type=>{render(type);document.querySelector(`[data-group="${type}"]`).addEventListener("click",e=>{if(!e.target.classList.contains("filter"))return;document.querySelectorAll(`[data-group="${type}"] .filter`).forEach(x=>x.classList.remove("active"));e.target.classList.add("active");render(type,e.target.dataset.filter)})});
+</script>
+</body></html>
